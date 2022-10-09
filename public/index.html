@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>API Server</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <a href="/" class="font-bold no-underline">API Server</a>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Guide</h2>
+        <p>
+          Below example is written with using Javascript
+          <a
+            target="_blank"
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+          >
+            Fetch API
+          </a>
+        </p>
+        <div id="crbn"></div>
+        <h3>Usage</h3>
+        <pre>
+          <code class="language-js">fetch('https://api-server.com/products/017f132c-c5cf-5151-bf84-60622c43af9b')
+            .then((response) =&gt; response.json())
+            .then((json) =&gt; console.log(json));
+          </code>
+        </pre>
+        <p>👇 <em>Output</em></p>
+        <pre>
+          <code class="language-js">
+            {
+              "id": "017f132c-c5cf-5151-bf84-60622c43af9b",
+              "name": "Baby shower shirts",
+              "eCommerce": "eBay",
+              "price": "$157.09",
+              "description": "Wuk haof wo etdavu vedzote iboadulo suuv.",
+              "discount": {
+                "cardType": "Solo"
+              }
+            }
+          </code>
+        </pre>
+        <div id="resources"></div>
+
+        <p>To access and modify resources, you can use any HTTP method:</p>
+        <p>
+          <code>GET</code>
+          <code>POST</code>
+          <code>PUT</code>
+          <code>PATCH</code>
+          <code>DELETE</code>
+          <code>OPTIONS</code>
+        </p>
+
+        <div id="custom-routes"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="footer__para">
+          Powered by&nbsp;
+          <a href="https://github.com/typicode/json-server" target="_blank"
+            >json-server</a
+          >&nbsp;with <code>Tarzzo Tech</code>
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
