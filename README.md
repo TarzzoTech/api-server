@@ -9,7 +9,7 @@
 ### Usage:
 
 ```js
-fetch('https://api-server-y4qj.onrender.com/products/017f132c-c5cf-5151-bf84-60622c43af9b')
+fetch('https://api-server-y4qj.onrender.com/products/eb7969b8-fa39-5a1d-a473-558f8e20ce52')
         .then((response) =&gt; response.json())
         .then((json) =&gt; console.log(json));
 ```
